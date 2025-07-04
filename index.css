@@ -4,14 +4,21 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;       /* take full viewport height */
+    
 }
 
 .container {
     background: rgb(255, 255, 255, 0.7);
-    max-width: 80%;
+    width: 90%; /* use a percentage so it scales */
+    max-width: 500px; /* limit the maximum size */
     margin: auto;
     border: 3px solid black;
     border-radius: 10px;
+    padding: 20px;
 }
 
 h1 {
